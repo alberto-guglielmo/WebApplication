@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>prova</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="../css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--suppress JSUnresolvedLibraryURL -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../js/star-rating.js" type="text/javascript"></script>
+<body>
+<form>
+    <input id="input-1" name="input-1" class="rating rating-loading" data-show-clear="false" data-show-caption="false" data-min="0" data-max="5" data-step="1">
+    <label for="input-5" class="control-label">Rate This</label>
+<input id="input-5" name="input-5" class="rating-loading" star-caption="false" data-show-caption="true">
+    
+    </form>
+    <script>
+      $(document).ready(function(){
+          $('#input-5').rating({clearCaption: 'Ancora nessun voto'});
+      });
+    </script>
+    </body>
+    </html>
+    
+    
+                 <select id="combostar" !important" name="stars">
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                 </select>
