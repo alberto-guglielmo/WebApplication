@@ -232,7 +232,7 @@ if ($righeTot == 1) {
               $echoAziende = "";
               $count = 1;
               while ($row = pg_fetch_row($aziende)) {
-                $echoAziende += "<tr><td>$count</td><td>$row[5]</td><td>$row[1]</td></tr>";
+                $echoAziende .= "<tr><td>$count</td><td>$row[5]</td><td>$row[1]</td></tr>";
                 $count++;
               }
               echo $echoAziende;
